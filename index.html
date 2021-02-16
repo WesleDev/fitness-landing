@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <header>
+      <a href="/" class="logo">Fitness</a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Trainers</a></li>
+        <li><a href="/">Blog</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="contentBx">
+        <h2>Lorem ipsum dolor <br> sit amet, consectet</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+          incidididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod.
+        </p>
+        <a href="/">Get Started</a>
+      </div>
+    </div>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/wesle.leal/"><img src="./assets/facebook.svg" alt="facebook"></a></li>
+      <li><a href="https://www.linkedin.com/in/wesleleal/"><img src="./assets/linkedin.svg" alt="linkedin"></a></li>
+      <li><a href="https://www.instagram.com/wesleleal/"><img src="./assets/instagram.svg" alt="instagram"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function toggleMenu() {
+      const toggleMenu = document.querySelector('.toggleMenu');
+      const navigation = document.querySelector('.navigation');
+      toggleMenu.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
